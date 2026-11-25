@@ -6,6 +6,7 @@
   <meta name="description" content="Academic portfolio of Aung Naing Thant, a GIST undergraduate interested in embodied AI, robot learning, reinforcement learning, and world models.">
   <title>Aung Naing Thant | Academic Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="theme.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -22,6 +23,9 @@
           <li><a href="#cv">CV</a></li>
         </ul>
       </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false" hidden>
+        Dark mode <span class="theme-switch" aria-hidden="true"></span>
+      </button>
     </div>
   </header>
 
@@ -32,18 +36,18 @@
         <h1>Aung Naing Thant</h1>
         <p class="intro-focus">Undergraduate focused on AI and data science</p>
         <a class="profile-link" href="https://github.com/lE0thanT">GitHub</a>
-        <div class="orbit" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </div>
     </div>
 
     <div class="wrap">
       <section class="portfolio-section" id="about" tabindex="-1" aria-labelledby="about-title">
         <h2 id="about-title">About</h2>
-        <p>I’m an undergraduate at GIST in Gwangju, South Korea, and I plan to specialize in AI and data science. I’m interested in how robots learn from interacting with their surroundings and use what they learn to decide what to do next.</p>
+        <div class="about-content">
+          <p>I’m an undergraduate at GIST in Gwangju, South Korea, and I plan to specialize in AI and data science. I’m interested in how robots learn from interacting with their surroundings and use what they learn to decide what to do next.</p>
+          <div class="media-slot portrait-slot">
+            <span>Portrait</span>
+          </div>
+        </div>
       </section>
 
       <section class="portfolio-section" id="education" tabindex="-1" aria-labelledby="education-title">
@@ -80,12 +84,25 @@
       <section class="portfolio-section" id="projects" tabindex="-1" aria-labelledby="projects-title">
         <h2 id="projects-title">Projects</h2>
         <article class="project">
-          <h3>Simulation-Based Autonomous Navigation for Unitree Go1</h3>
-          <p class="entry-meta">ARIA (GIST Robotics Club) · September 2026–present</p>
-          <h4>Team goal</h4>
-          <p>We’re building a navigation system that will let a simulated Unitree Go1 quadruped reach a specified destination on its own.</p>
-          <h4>My contribution</h4>
-          <p>I work on integrating ROS 2 Jazzy and Nav2, with a focus on navigation goals, control interfaces, and diagnostics. I coordinate that work with the team’s Isaac Sim setup and Isaac Lab locomotion policy. Full Go1 integration is still in progress.</p>
+          <header class="project-header">
+            <h3>Simulation-Based Autonomous Navigation for Unitree Go1</h3>
+            <p class="entry-meta">ARIA (GIST Robotics Club) · September 2026–present</p>
+          </header>
+          <div class="project-body">
+            <div class="media-slot simulation-slot">
+              <span>Isaac Sim screenshot</span>
+            </div>
+            <div class="project-details">
+              <div class="contribution">
+                <h4>My contribution</h4>
+                <p>I work on integrating ROS 2 Jazzy and Nav2, with a focus on navigation goals, control interfaces, and diagnostics. I coordinate that work with the team’s Isaac Sim setup and Isaac Lab locomotion policy. Full Go1 integration is still in progress.</p>
+              </div>
+              <div>
+                <h4>Team goal</h4>
+                <p>We’re building a navigation system that will let a simulated Unitree Go1 quadruped reach a specified destination on its own.</p>
+              </div>
+            </div>
+          </div>
         </article>
       </section>
 
